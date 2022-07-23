@@ -80,3 +80,7 @@ async function getUser() {
 ```
 
 이렇게 바뀔 수 있다.
+
+
+# 참고 자료
+- [JAVASCRIPT.INFO : async와 await](https://ko.javascript.info/async-await)
