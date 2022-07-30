@@ -48,6 +48,7 @@ Lexical Environment가 인스턴스화 된다는 게 무슨 말일까?
 <img src="./image/lexicalEnvironment_4.png" width="50%" alt="lexicalEnvironment_4"></img>
 
 <img src="./image/lexicalEnvironment_5.png" width="50%" alt="lexicalEnvironment_5"></img>
+
 `makeAdder` 함수가 실행 될 때 Lexical Envrionment가 만들어지고 파라미터인 x가 올라간다. 
 
 <img src="./image/lexicalEnvironment_6.png" width="50%" alt="lexicalEnvironment_6"></img>
