@@ -1,0 +1,43 @@
+-------------------------- 1-1.js -------------------------------------
+let defaultOwner = { firstName: '마틴', lastName: 'kim' };
+// 불변성
+
+export function getDefaultOwer() {
+	return defaultOwer;
+}
+
+------------------------------------------------------------------------
+
+import { getDefaultOwer } from './1-1.js';
+
+const ower = getDefaultOwer();
+owner.firstName = '마틴';
+console.log(owner);
+console.log(getDefaultOwer());
+
+------------------------------------------------------------------------
+
+let defaultOwner = { firstName: '마틴', lastName: 'kim' };
+// 불변성
+
+export function getDefaultOwer() {
+	return { ...defaultOwer };
+}
+
+---->
+
+class Person {
+	#lastName;
+	#firstName;
+	constructor(data) {
+		this.#lastName = data.lastName;
+		this.#firstName = data.firstName;
+	}
+	get lastName() {
+		return this.#lastName;
+	}
+	get firstName() {
+		return this.#firstName;
+	}
+}
+
