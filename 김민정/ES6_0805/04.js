@@ -13,8 +13,8 @@ const walk = person.walk;
 walk(); // undifined
 
 // 객체 외부의 독립형 함수로 함수를 호출할 때
-// 기본적으로 전역 개체에 대한 참조를 반환한다 -- window
-// 이창개체이고 엄격모드?면 -- undifined 반환
+// 기본적으로 전역 객체에 대한 참조를 반환한다 -- window
+// window객체이고 엄격모드?면 -- undifined 반환
 
 // undifined 반환 문제를 해결하려면
 // javascript에서 모든 함수는 객체이므로

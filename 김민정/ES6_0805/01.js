@@ -10,8 +10,6 @@ javascript EC6 객체지향 프로그램
 7. classes
 8. modules
 
-문제해결 : 프로그램 처럼 생각하는 방법
-생성자 함수 개체 프로토타입 상속 다향성 클래스... 
 */
 
 function sayHello() {
