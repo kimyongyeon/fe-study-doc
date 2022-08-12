@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Import Export JavaScript ES6 Modules</title>
+    <script src="./import_sum.js" type="module"></script>
+    <!-- 필요한 함수내용만 import한 파일 하나만 링크 -->
+</head>
+<body>
+   <!-- https://www.youtube.com/watch?v=7P5JUMc1cI4 -->
+   <pre>
+   <h1>ES6 - import, export</h1>
+
+   import, export는 ES6(ES2015)에서 새롭게 도입된 문법입니다. 
+   ES6부터는 import, export 키워드를 사용하여 모듈 시스템을 사용할 수 있습니다.
+   
+   export
+   
+   export 키워드로 변수, 함수, 클래스를 외부의 스크립트로 모듈화 시킬 수 있습니다. 
+   외부로 보내고 싶은 것들에 일일이 키워드를 붙여줍니다.
+   
+   // 변수
+   export const pi = Math.PI;
+    
+   // 함수
+   export function square(x) {
+     return x * x;
+   }
+    
+   // 클래스
+   export class Pokemon {
+     constructor(name) {
+       this.name = name;
+     }
+   }
+
+   아래처럼 한번에 모아서 export 해도됩니다.
+   
+   // 변수
+   const pi = Math.PI;
+    
+   // 함수
+   function square(x) {
+     return x * x;
+   }
+   
+   // 클래스
+   class Pokemon {
+     constructor(name) {
+       this.name = name;
+     }
+   }
+   
+   export { pi, square, Pokemon };
+   import
+   
+   다음과 같이 'import' 키워드를 사용해 from 으로 해당 모듈의 js파일을 경로를 명시해주면 됩니다. 
+   단, import 시 export 된 이름과 동일하게 설정해줘야 합니다.
+   
+   import pi from './lib';
+   import square from './lib';
+   import Pokemon from './lib';
+   아래처럼 한번에 모아서 import 해도됩니다.
+   
+   import { pi, square, Pokemon } from './lib';
+   console.log(pi);         // 3.141592653589793
+   console.log(square(10)); // 100
+   console.log(new Pokemon('피카츄')); // Pokemon { name: '피카츄' }
+
+   아래와 같이 '* as' 키워드를 사용하면 한 파일 안에 export된 
+   모든 변수, 함수 클래스를 한번에 import할 수 있습니다.
+   
+   import * as lib from './lib'
+   console.log(lib.pi);         // 3.141592653589793
+   console.log(lib.square(10)); // 100
+   console.log(new lib.Pokemon('피카츄')); // Pokemon { name: '피카츄' }
+   default export
+   
+   default키워드를 사용하면 이 모듈을 사용하는 스크립트에서 따로 모듈 변수명을 입력하지 않으면 
+   자동으로 default키워드가 있는 모듈을 가져옵니다.
+   
+   function square(x) {
+     return x * x;
+   }
+
+   export default square;
+   또는 아래와 같이 이름을 명시하지 않고 export default가 가능합니다.
+   
+   export default function(x) { 
+     return x * x;
+   }
+
+   export default으로 선언된 파일은 import 시 아무 이름으로 import가 가능합니다.
+   
+   import square1 from './lib';
+   import square2 from './lib';
+   import square3 from './lib';
+
+</pre>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+javascript 함수형 프로그래밍 Anjana vakil jsunconf
+MAp Reduce
+
+Mori
+
+불변데이터 구조
+
+Immutable.js
+
+람다?
+
+영속성컨텍스트?
+
+재사용성
+
+객체 --- 
+
+참조가 사라진다 --- 변수실사용 체크
+
+
+WEbauthn.io
+
+webauthn.io
