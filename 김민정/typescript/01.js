@@ -67,12 +67,10 @@ joyfull(123, 'str')
 // number 자리에 number, string자리에 str을 넣으니 에러가 사라지고 정상 작동 한다.
 
 // 4. 배열 타입 (Array Type)
-
 // 배열 타입을 type annotoation 하는 방법 두 가지
 
 // 배열명 : string[], 
 // 배열명 : Array<string>
-
 // 두 가지 모두 똑같은 의미이고 표기법만 다르다.
 
 const 문자열배열: string[] = ['str', 'str2', 'str3']
@@ -80,14 +78,16 @@ const 문자열배열2: Array<string> = ['str', 'str2', 'str3']
 const 숫자배열: Array<number> = [1, 2, 3]
 const 논리배열: boolean[] = [false, true, false, true]
 
-// 리터럴 타입(Literal Type)
+// 5. 리터럴 타입(Literal Type)
 // 특정 타입이 가질 수 있는 하나의 값을 뜻한다.
 
 let letString = 'Hello' // output : string
 const constString = 'Hello' // output : "Hello"
 
-// 위와 같이 코드를 작성하면 let으로 선언한 것은 string이 출력되고 const로 선언한 것은 선언한 값 그대로 보이는 차이점이 있었다.
-// let은 변수를 넣는 곳으로, 언제든 변할 수 있는 값이라 그렇다. 즉, 재할당이 가능하다는 뜻이다.
+// 위와 같이 코드를 작성하면 let으로 선언한 것은 string이 출력되고 
+// const로 선언한 것은 선언한 값 그대로 보이는 차이점이 있었다.
+// let은 변수를 넣는 곳으로, 언제든 변할 수 있는 값이라 그렇다. 
+// 즉, 재할당이 가능하다는 뜻이다.
 // 반대로 const는 변하지 않는 상수가 있기 때문에 값이 그대로 보인다.
 
 // 5. 튜플 타입(Tuple Type)
