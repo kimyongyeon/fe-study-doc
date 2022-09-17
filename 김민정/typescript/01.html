@@ -1,0 +1,28 @@
+// TypeScript 기본 타입
+
+// 1. 원시 타입 (Primitive value)
+// 자바스크립트에 있는 원시 타입과 흡사하다.
+// 변수명 옆에 타입명을 기재해 주면 된다. 
+
+const 문자바구니:string = 'string'
+const 숫자바구니:number = 123
+const 논리바구니:bool = true
+
+const 빅인트바구니:bitint = 100n
+
+// 타입 추론이 되게끔 기입한 예제
+
+const 문자바구니 = 'string'
+const 숫자바구니 = 123
+const 논리바구니 = true
+
+// {   
+    <!-- "compilerOptions" : {     
+      "target": "es5",     
+      "module": "commonjs",  
+    } 
+  } -->
+  
+// 추론은 옵션추가
+// tsconfig.json 자동생성
+// tsc --init
